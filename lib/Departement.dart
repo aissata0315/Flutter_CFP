@@ -18,7 +18,7 @@ class DepartementState extends State<Departement>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Listes des departements du centre"),),
+      appBar: AppBar(title: Text("Listes des departements"),),
       body: Center(
           child: this.listeDepartement==null?CircularProgressIndicator():
           ListView.builder(
@@ -46,7 +46,7 @@ class DepartementState extends State<Departement>{
     http.get(url)
         .then((resp){
       setState(() {
-        this.listeDepartement=json.decode(resp.body)['_embedded']['departements'];
+        this.listeDepartement=json.decode(resp.body);
       });
     }).catchError((err){
       print(err);

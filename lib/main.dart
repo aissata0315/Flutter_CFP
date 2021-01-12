@@ -12,7 +12,7 @@ void main()=>runApp(
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
         appBarTheme: AppBarTheme(
-            color: Colors.cyanAccent
+            color: Colors.blueGrey
         ),
       ),
       debugShowCheckedModeBanner: false,
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       ),
       body: Center(
         child: Text("Centre de Tattaguine",style: TextStyle(
-            color: Colors.orange, fontFamily: 'times New Roman',fontSize: 22
+            color: Colors.blueGrey, fontFamily: 'times New Roman',fontSize: 22
         ),),
       ),
       drawer: Drawer(
@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               decoration: BoxDecoration(
-                color: Colors.cyanAccent,
+                color: Colors.indigoAccent,
               ),
             ),
             ListTile(
